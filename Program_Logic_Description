@@ -1,0 +1,8 @@
+
+A program created using SWING library. This program spawns chickens, foxes and seed in random locations at the beginning of the simulation.
+In the first iteration chickens move around the maze to find seed. Once a chicken finds a seed, it's health regenerates (if chicken comes 
+by a fox it loses health and gains experience, it also loses health etery step it takes) and it also gains experience. To calculate gained 
+knowledge I used Q-learning algorithm. At the end of the first iteration (after all chickens die) time of lifespan is measured.
+Next iterations respawn all things in the same place and the process of experience gaining continues. After 100 iterations chickens stop 
+exploring and start exploiting based on the knowledge they acquired. Then the user can stop the simulation and compare the time of 
+lifespan of chickens in first and last iterations to see if Q-learning algorithm helped them survive longer.
